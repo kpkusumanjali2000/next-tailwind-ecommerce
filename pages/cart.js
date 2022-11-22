@@ -60,20 +60,6 @@ export default function cartScreen() {
                         </a>
                       </Link>
                     </td>
-                    {/* <td className="p-5 text-right">
-                      <select
-                        value={item.quantity}
-                        onChange={(e) =>
-                          updateCartHandler(item, e.target.value)
-                        }
-                      >
-                        {[...Array(item.countInStock).keys()].map((x) => (
-                          <option key={x + 1} value={x + 1}>
-                            {x + 1}
-                          </option>
-                        ))}
-                      </select>
-                    </td> */}
                     <td className="p-5 text-right">
                       <select
                         className="bg-white"
