@@ -37,26 +37,26 @@
       redirect to cart screen after add to cart
 10. Handle Changing Cart Items
 11. 1. add select box for quantity
-   2. handle select box change
-11. Save Cart Items
-   1. install js-cookie package
-   2. save and retrieve cart items in cookies
-12. Create Login form
-   1. install react hook form
-   2. create input boxes
-   3. add login button
-13. Connect to MongoDB
-   1. install mongoose
-   2. install mongodb or use mongodb atlas
-   3. save connection url in .env file
-   4. create db utils file
-   5. create sample users
-14. Create login API
-   1. install next-auth
-   2. create nextauth.js
-   3. implement signin
-   4. use signin in login
-15. Add User Menu
-   1. check user authentication
-   2. install headlessui
-   3. show user menu
+12. handle select box change
+13. Save Cart Items
+14. install js-cookie package
+15. save and retrieve cart items in cookies
+16. Create Login form
+17. install react hook form
+18. create input boxes
+19. add login button
+20. Connect to MongoDB
+21. install mongoose
+22. install mongodb or use mongodb atlas
+23. save connection url in .env file
+24. create db utils file
+25. create sample users
+26. Create login API
+27. install next-auth
+28. create nextauth.js
+29. implement signin
+30. use signin in login
+31. Add User Menu
+32. check user authentication
+33. install headlessui
+34. show user menus
