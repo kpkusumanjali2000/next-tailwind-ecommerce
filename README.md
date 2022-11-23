@@ -36,7 +36,7 @@
    3. list items in cart items.
       redirect to cart screen after add to cart
 10. Handle Changing Cart Items
-   1. add select box for quantity
+11. 1. add select box for quantity
    2. handle select box change
 11. Save Cart Items
    1. install js-cookie package
@@ -45,3 +45,9 @@
    1. install react hook form
    2. create input boxes
    3. add login button
+13. Connect to MongoDB
+   1. install mongoose
+   2. install mongodb or use mongodb atlas
+   3. save connection url in .env file
+   4. create db utils file
+   5. create sample users
