@@ -69,3 +69,7 @@
 17. Create Payment Method
    1. display payment method
    2. save payment method in context
+18. See Sample Products
+   1. insert sample product to mongodb
+   2. load product from db in hoem and screen
+   3. check product count in stock in add to cart

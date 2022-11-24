@@ -19,7 +19,7 @@ const data = {
     {
       name: 'Black pant',
       slug: 'black-pant',
-      catagory: 'pants',
+      category: 'pants',
       image: '/images/pants1.jpg',
       price: 600,
       brand: 'Max',
@@ -31,7 +31,7 @@ const data = {
     {
       name: 'Gray Pant',
       slug: 'gray-pant',
-      catagory: 'pants',
+      category: 'pants',
       image: '/images/pants2.jpg',
       price: 850,
       brand: 'Max',
@@ -43,7 +43,7 @@ const data = {
     {
       name: 'White Pant',
       slug: 'white-pant',
-      catagory: 'pants',
+      category: 'pants',
       image: '/images/pants3.jpg',
       price: 700,
       brand: 'Max',
@@ -55,7 +55,7 @@ const data = {
     {
       name: 'Casual Shirt',
       slug: 'casual-shirt',
-      catagory: 'shirts',
+      category: 'shirts',
       image: '/images/shirt1.jpg',
       price: 800,
       brand: 'Max',
@@ -67,7 +67,7 @@ const data = {
     {
       name: 'Pink Shirt',
       slug: 'pink-shirt',
-      catagory: 'shirts',
+      category: 'shirts',
       image: '/images/shirt2.jpg',
       price: 950,
       brand: 'Max',
@@ -79,7 +79,7 @@ const data = {
     {
       name: 'Blue Shirt',
       slug: 'blue-shirt',
-      catagory: 'shirts',
+      category: 'shirts',
       image: '/images/shirt3.jpg',
       price: 1500,
       brand: 'Max',
