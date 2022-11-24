@@ -33,7 +33,7 @@ export default NextAuth({
           bycryptjs.compareSync(credentials.password, user.password)
         ) {
           return {
-            _id: user._id,
+            _id: user._id,  
             name: user.name,
             email: user.email,
             image: 'f',

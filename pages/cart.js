@@ -29,7 +29,7 @@ function CartScreen() {
         <div>
           Cart is Empty.
           <Link legacyBehavior href="/">
-            Go back to Shopping
+            Go Shopping
           </Link>
         </div>
       ) : (
