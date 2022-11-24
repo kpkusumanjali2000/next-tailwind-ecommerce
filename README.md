@@ -66,3 +66,6 @@
 16. Create Shipping Screen
    1. display address fields
    2. save address in context 
+17. Create Payment Method
+   1. display payment method
+   2. save payment method in context
