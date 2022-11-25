@@ -47,7 +47,7 @@ export default function PaymentScreen() {
           <div key={payment} className="mb-4">
             <input
               name="paymentMethod"
-              className="p-2 outline-none focus:ring-0 "
+              className="p-2 outline-none focus:ring-0"
               id={payment}
               type="radio"
               checked={selectedPaymentMethod === payment}
@@ -59,7 +59,7 @@ export default function PaymentScreen() {
             </label>
           </div>
         ))}
-        <div className="mb-4 flex justify-between bg-white">
+        <div className="mb-4 flex justify-between">
           <button
             onClick={() => router.push('/shipping')}
             type="button"
@@ -73,3 +73,5 @@ export default function PaymentScreen() {
     </Layout>
   );
 }
+
+PaymentScreen.auth = true;
