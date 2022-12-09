@@ -108,3 +108,7 @@
    1. create admin menu
    2. create dashboard screen
    3. implement admin summary api
+28. List Orders for Admin
+   1. create order page
+   2. create order api
+   3. use api in page
