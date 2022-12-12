@@ -112,3 +112,7 @@
    1. create order page
    2. create order api
    3. use api in page
+29. Deliver Order for Admin
+   1. create deliver api
+   2. add deliver button
+   3. implement click handler
