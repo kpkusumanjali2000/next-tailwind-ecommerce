@@ -4,23 +4,23 @@ import db from '../../../../../utils/db';
 
 const handler = async (req, res) => {
   const session = await getSession({ req });
-  if (!session) {
+  if (!session || (session && !session.user.isAdmin)) {
     return res.status(401).send('Error: signin required');
   }
   await db.connect();
   const order = await Order.findById(req.query.id);
   if (order) {
-    order.Delivered = true;
-    order.DeliveredAt = Date.now();
+    order.isDelivered = true;
+    order.deliveredAt = Date.now();
     const deliveredOrder = await order.save();
     await db.disconnect();
     res.send({
-      message: 'Order Delivered Successfully',
+      message: 'order delivered successfully',
       order: deliveredOrder,
     });
   } else {
     await db.disconnect();
-    res.status(400).send({ message: 'Error: Order not found' });
+    res.status(404).send({ message: 'Error: order not found' });
   }
 };
 

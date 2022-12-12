@@ -43,7 +43,9 @@ export default function AdminOrderScreen() {
         <div>
           <ul>
             <li>
-              <Link href="/admin/dashboard">Dashboard</Link>
+              <Link legacyBehavior href="/admin/dashboard">
+                Dashboard
+              </Link>
             </li>
             <li>
               <Link legacyBehavior href="/admin/orders">
@@ -51,10 +53,14 @@ export default function AdminOrderScreen() {
               </Link>
             </li>
             <li>
-              <Link href="/admin/products">Products</Link>
+              <Link legacyBehavior href="/admin/products">
+                Products
+              </Link>
             </li>
             <li>
-              <Link href="/admin/users">Users</Link>
+              <Link legacyBehavior href="/admin/users">
+                Users
+              </Link>
             </li>
           </ul>
         </div>

@@ -25,18 +25,18 @@ function reducer(state, action) {
       return { ...state, loadingPay: false, errorPay: action.payload };
     case 'PAY_RESET':
       return { ...state, loadingPay: false, successPay: false, errorPay: '' };
+
     case 'DELIVER_REQUEST':
       return { ...state, loadingDeliver: true };
     case 'DELIVER_SUCCESS':
       return { ...state, loadingDeliver: false, successDeliver: true };
     case 'DELIVER_FAIL':
-      return { ...state, loadingDeliver: false, errorDeliver: action.payload };
+      return { ...state, loadingDeliver: false };
     case 'DELIVER_RESET':
       return {
         ...state,
         loadingDeliver: false,
         successDeliver: false,
-        errorDeliver: '',
       };
 
     default:
@@ -103,7 +103,7 @@ function OrderScreen() {
       };
       loadPaypalScript();
     }
-  }, [order, orderId, paypalDispatch, successPay, successDeliver]);
+  }, [order, orderId, paypalDispatch, successDeliver, successPay]);
   const {
     shippingAddress,
     paymentMethod,
@@ -159,8 +159,8 @@ function OrderScreen() {
         `/api/admin/orders/${order._id}/deliver`,
         {}
       );
-      dispatch({ type: 'DELIVER_SSUCCESS', payload: data });
-      toast.success('Order is Delivered');
+      dispatch({ type: 'DELIVER_SUCCESS', payload: data });
+      toast.success('Order is delivered');
     } catch (err) {
       dispatch({ type: 'DELIVER_FAIL', payload: getError(err) });
       toast.error(getError(err));
