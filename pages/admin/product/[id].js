@@ -58,6 +58,10 @@ export default function AdminProductEditScreen() {
 
   const router = useRouter();
 
+  const uploadHandler = async (e, imageField = 'image') => {
+    const url = `https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_}`;
+  };
+
   const submitHandler = async ({
     name,
     slug,
